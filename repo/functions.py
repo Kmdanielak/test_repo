@@ -9,7 +9,10 @@
 #     return len(text)
 
 def fizzbuzz(i):
-    i = int(float(i))
+    try:
+        i = int(float(i))
+    except:
+        return None
     if i <= 0:
         return None
     elif i % 15 == 0:

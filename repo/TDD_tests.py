@@ -40,6 +40,6 @@ def test_fizzbuzz_advanced():
     assert fizzbuzz("5.99") == "buzz"
     assert fizzbuzz(0) == None
     assert fizzbuzz(0.999) == None
-    # assert fizzbuzz("mama") == None
+    assert fizzbuzz("mama") == None
     assert fizzbuzz(-5) == None
     assert fizzbuzz("-15.8") == None
