@@ -21,15 +21,15 @@ import math
 #     assert no_of_letter("mama.tata") == 8
 #     # nie odpowiedzieliśmy na ten warunek
 #
-# def test_fizzbuzz():
-#     assert fizzbuzz(1) == 1
-#     assert fizzbuzz(2) == 2
-#     assert fizzbuzz(3) == "fizz"
-#     assert fizzbuzz(4) == 4
-#     assert fizzbuzz(5) == "buzz"
-#     assert fizzbuzz(6) == "fizz"
-#     assert fizzbuzz(10) == "buzz"
-#     assert fizzbuzz(15) == "fizzbuzz"
+def test_fizzbuzz():
+    assert fizzbuzz(1) == 1
+    assert fizzbuzz(2) == 2
+    assert fizzbuzz(3) == "fizz"
+    assert fizzbuzz(4) == 4
+    assert fizzbuzz(5) == "buzz"
+    assert fizzbuzz(6) == "fizz"
+    assert fizzbuzz(10) == "buzz"
+    assert fizzbuzz(15) == "fizzbuzz"
 
 def test_fizzbuzz_advanced():
     assert fizzbuzz(1.3) == 1
