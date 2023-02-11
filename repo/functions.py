@@ -9,7 +9,10 @@
 #     return len(text)
 
 def fizzbuzz(i):
-    if i % 3 == 0 and i % 5 == 0:
+    i = int(float(i))
+    if i <= 0:
+        return None
+    elif i % 15 == 0:
         return "fizzbuzz"
     elif i % 5 == 0:
         return "buzz"
