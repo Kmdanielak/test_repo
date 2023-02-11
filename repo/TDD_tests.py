@@ -29,3 +29,16 @@ def test_fizzbuzz():
     assert fizzbuzz(6) == "fizz"
     assert fizzbuzz(10) == "buzz"
     assert fizzbuzz(15) == "fizzbuzz"
+
+def test_fizzbuzz_advanced():
+    # assert fizzbuzz(1.3) == 1
+    # assert fizzbuzz(1.9) == 1
+    # assert fizzbuzz("1") == 1
+    # assert fizzbuzz("1.7") == 1
+    # assert fizzbuzz(5.9) == "buzz"
+    # assert fizzbuzz("5.99") == "buzz"
+    # assert fizzbuzz(0) == None
+    # assert fizzbuzz(0.999) == None
+    # assert fizzbuzz("mama") == None
+    # assert fizzbuzz(-5) == None
+    # assert fizzbuzz("-15.8") == None
