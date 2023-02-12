@@ -1,4 +1,6 @@
 # # import functions
+import pytest
+
 from functions import *
 import math
 #
@@ -21,6 +23,12 @@ import math
 #     assert no_of_letter("mama.tata") == 8
 #     # nie odpowiedzieliśmy na ten warunek
 #
+
+@pytest.mark.parametrize("number, result", [(1, 1), (3, "fizz"), (5, "buzz")])
+
+def test_fizzbuzz_param(number, result):
+    assert  fizzbuzz(number) == result
+
 def test_fizzbuzz():
     assert fizzbuzz(1) == 1
     assert fizzbuzz(2) == 2
