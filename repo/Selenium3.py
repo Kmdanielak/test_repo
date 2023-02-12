@@ -3,13 +3,7 @@ import time
 from selenium.webdriver.support import expected_conditions as excon
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import TimeoutException
-import datetime
-
-
-def make_screenshot(driver):
-    teraz = datetime.datetime.now()
-    screenshot = teraz.strftime("%H%M%S") + ".png"
-    driver.get_screenshot_as_file(screenshot)
+from Selenium_funkcje import make_screenshot
 
 
 def czekaj_na_id(element_id):
@@ -25,6 +19,7 @@ def czekaj_na_id(element_id):
 opcje = webdriver.ChromeOptions()
 opcje.add_argument("headless")
 driver = webdriver.Chrome(options=opcje)
+nazwa = driver.title
 driver.get("http://www.saucedemo.com")
 try:
     login_button = czekaj_na_id("login-button")
@@ -33,6 +28,6 @@ except TimeoutException:
 else:
     print("Znaleziono")
 finally:
-    make_screenshot(driver)
+    make_screenshot(driver, nazwa)
     time.sleep(2)
     driver.quit()
